@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 
 using R5T.Lombardy;
-using R5T.Pickwich.Types;
+using R5T.Pickwich.Types;using R5T.T0064;
 
 
 namespace R5T.Pickwich.Default
-{
-    public class CSharpVisualStudioProjectFilePathProvider : IVisualStudioProjectFilePathProvider
+{[ServiceImplementationMarker]
+    public class CSharpVisualStudioProjectFilePathProvider : IVisualStudioProjectFilePathProvider,IServiceImplementation
     {
         private IFileNameOperator FileNameOperator { get; }
         private IStringlyTypedPathOperator StringlyTypedPathOperator { get; }
